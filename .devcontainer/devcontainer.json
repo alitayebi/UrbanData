@@ -1,0 +1,10 @@
+{
+  \"name\": \"Urban Data Analysis\",
+  \"image\": \"mcr.microsoft.com/vscode/devcontainers/python:3.9\", 
+  \"extensions\": [
+    \"ms-python.python\",
+    \"ikuyadeu.r\",
+    \"ms-toolsai.jupyter\"
+  ],
+  \"postCreateCommand\": \"pip install pandas geopandas rpy2 && R -e \\\"install.packages(c('sf','tidyverse'), repos='https://cran.r-project.org')\\\"\"
+}
